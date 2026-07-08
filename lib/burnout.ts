@@ -19,7 +19,7 @@ function getLocalHourAndDay(date: Date, timezone: string): { hour: number; dayOf
 interface BurnoutSettings {
   timezone: string;
   workStartHour: number; // hour when work day starts (e.g. 9)
-  workEndHour: number;   // late-night start hour (e.g. 23 = 11pm)
+  workEndHour: number;   // hour when late-night begins (e.g. 23 = 11pm)
 }
 
 const DEFAULTS: BurnoutSettings = {
