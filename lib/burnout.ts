@@ -17,7 +17,7 @@ function getLocalHourAndDay(date: Date, timezone: string): { hour: number; dayOf
 }
 
 interface BurnoutSettings {
-  timezone: string; // IANA timezone
+  timezone: string;
   workStartHour: number; // hour when work day starts (e.g. 9)
   workEndHour: number;   // hour when late-night begins (e.g. 23 = 11pm)
 }
