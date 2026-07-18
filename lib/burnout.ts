@@ -23,7 +23,7 @@ interface BurnoutSettings {
 }
 
 const DEFAULTS: BurnoutSettings = {
-  timezone: "UTC",
+  timezone: "UTC", // default
   workStartHour: 9,
   workEndHour: 23,
 };
