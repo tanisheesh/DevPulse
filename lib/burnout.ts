@@ -30,7 +30,7 @@ const DEFAULTS: BurnoutSettings = {
 
 function isAfterHours(date: Date, settings: BurnoutSettings): boolean {
   const { hour } = getLocalHourAndDay(date, settings.timezone);
-  // After-hours = before workStart OR at/after workEnd
+  // After hours = before workStart or at/after workEnd
   return hour < settings.workStartHour || hour >= settings.workEndHour;
 }
 
